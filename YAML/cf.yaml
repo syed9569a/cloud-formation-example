@@ -1,0 +1,10 @@
+# Basic YAML Template.
+# This is template will create a stack, which will be an S3 bucket. 
+# There is no name associated with this bucket, the name "HelloBucket", is a reference name.
+# The reference name allows it to be used throughout the YAML, in-case other resources need to access this S3 bucket.
+
+Resources:
+    HelloBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: "examplebucketqac234"
